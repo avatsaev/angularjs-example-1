@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html ng-app="ContactsApp">
+
+  <head>
+    <meta charset="utf-8" />
+    <title>AngularJS Contacts Manager</title>
+    <link href="style.css" rel="stylesheet" />
+    <script data-semver="1.5.7" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js" data-require="angular.js@1.5.x"></script>
+    <script src="app.js"></script>
+  </head>
+
+  <body ng-controller="MainCtrl">
+
+    <div>
+      <span>Contact name: </span>
+      <input ng-model="new_contact_input" placeholder="contact name..."/>
+      <button type="button" ng-click="add_contact()">Add</button>
+    </div>
+
+    <div class="contact-list">
+      <span>Contact list:</span>
+      <ul>
+        <li ng-repeat="contact in contacts "> {{contact}}</li>
+      </ul>
+    </div>
+
+    <div class="contacts-counter">
+      <span>Total contacts: {{contacts.length}}</span>
+    </div>
+
+
+  </body>
+
+</html>
