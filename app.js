@@ -9,6 +9,7 @@ app.controller('MainCtrl', ($scope) => {
 
   //add button clicked
   $scope.add_contact = () => {
+
     //make sure that the input is not empty
     if ($scope.new_contact_input && $scope.new_contact_input.length){
 
@@ -17,15 +18,13 @@ app.controller('MainCtrl', ($scope) => {
 
         // add new contact to our contacts array
         $scope.contacts.push($scope.new_contact_input);
-        $scope.new_contact_input = "" // clear the input after adding a new contact (two-way data binding)
+        $scope.new_contact_input = ""; // clear the input after adding a new contact (two-way data binding)
 
       }else{
         //show error message if contact already exists
         alert("Error: Contact already exists. Pick a diffferent name");
       }
     }
-
-
 
   }
 
