@@ -1,14 +1,14 @@
 //This script is written in ECMAScript 2015 (ES6), please use a modern browser to execute it
 
-let app = angular.module('ContactsApp', []);
+var app = angular.module('ContactsApp', []);
 
-app.controller('MainCtrl', ($scope) => {
+app.controller('MainCtrl', function($scope) {
 
   $scope.contacts = []; //array of strings containing our contact names
   $scope.new_contact_input; //new contact input component value
 
   //add button clicked
-  $scope.add_contact = () => {
+  $scope.add_contact = function() {
 
     //make sure that the input is not empty
     if ($scope.new_contact_input && $scope.new_contact_input.length){

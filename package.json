@@ -1,0 +1,24 @@
+{
+  "name": "angular-example-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/avatsaev/angularjs-example-1.git"
+  },
+  "author": "Vatsaev Aslan (@avatsaev)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/avatsaev/angularjs-example-1/issues"
+  },
+  "homepage": "https://github.com/avatsaev/angularjs-example-1#readme",
+  "dependencies": {
+    "connect": "^3.4.1",
+    "serve-static": "^1.11.1"
+  }
+}
